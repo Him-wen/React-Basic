@@ -68,3 +68,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### 使用
+
+```
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+
+```
+
+```
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Rehooks from '../src/coderwhy-hook/addefface'
+import Refstest from './refs'
+import Hellotest from './demo1'//将需要的组件导入，需要使用哪个组件就改成相对应的
+
+
+ReactDOM.render(
+    <Hellotest />,
+    document.getElementById('root')
+)
+```
