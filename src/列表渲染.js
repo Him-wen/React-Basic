@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './app'
 
 class Hello04 extends React.Component{
   constructor(props){
@@ -20,7 +19,9 @@ class Hello04 extends React.Component{
   }
 }
 
-ReactDOM.render(
-  <Hello04 />,
-  document.querySelector('#root')
-)
+// ReactDOM.render(
+//   <Hello04 />,
+//   document.querySelector('#root')
+// )
+
+export default Hello04;

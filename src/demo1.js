@@ -12,9 +12,9 @@ class Hellotest extends React.Component {
   }
 }
 
-ReactDOM.render(
-  <Hellotest />,
-  document.querySelector('#root')
-)
+// ReactDOM.render(
+//   <Hellotest />,
+//   document.querySelector('#root')
+// )
 
 export default Hellotest;

@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './app'
 
 function User2(props) {
   return(
@@ -33,7 +32,9 @@ function Test(props) {
 }
 
 
-ReactDOM.render(
-  <Test weather="weather" />,
-  document.querySelector('#root')
-)
+// ReactDOM.render(
+//   <Test weather="weather" />,
+//   document.querySelector('#root')
+// )
+
+export default Test;

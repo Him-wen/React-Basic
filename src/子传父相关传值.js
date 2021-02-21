@@ -11,6 +11,13 @@ class Hello05 extends React.Component{
         }
     }
 
+    setChildData=(data)=>{
+        this.setState({
+            msg:data
+        })
+        // 方法记得加箭头
+    }
+
     render(){
         return(
             <div>
@@ -20,21 +27,19 @@ class Hello05 extends React.Component{
             </div>
         )
     }
-
-    setChildData=(data)=>{
-        this.setState({
-            msg:data
-        })
-        // 方法记得加箭头
-    }
 }
 
-class Hello06 extends React.Component{
+class Hello06 extends React.Component{//子组件将msg01传给父组件
     constructor(props){
         super(props)
         this.state={
             msg01:'hello'
         }
+    }
+    
+    setclick=()=>{
+        this.props.setChildData(this.state.msg01)
+        // 这是一个回调函数
     }
 
     render(){
@@ -45,13 +50,12 @@ class Hello06 extends React.Component{
         )
     }
 
-    setclick=()=>{
-        this.props.setChildData(this.state.msg01)
-        // 这是一个回调函数
-    }
+    
 }
 
-ReactDOM.render(
-<Hello05/>, 
-document.getElementById("root")
-);
+// ReactDOM.render(
+// <Hello05/>, 
+// document.getElementById("root")
+// );
+
+export default Hello05;
