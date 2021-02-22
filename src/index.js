@@ -10,6 +10,9 @@ import Test from './多层组件的传值'
 import Hello05 from './子传父相关传值'
 import AppC from './contextapi'
 import Example from './coderwhy-hook/addefface'
+import App1 from './组件通信案例/App'
+import RefDemo from './Ref使用'
+
 
 
 
@@ -23,12 +26,12 @@ import Example from './coderwhy-hook/addefface'
  function App() {//函数组件的写法
      return(
        <div>
-        <Example />
+        <RefDemo />
         {/* 这里面修改具体逻辑 */}
        </div>
      )
  }
 ReactDOM.render(
-    <App />,
+    <RefDemo />,
     document.getElementById('root')
 )
